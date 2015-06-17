@@ -1,0 +1,707 @@
+{% extends "estate/base.html" %}
+
+{% block title %}房地产精准营销系统{% endblock %}
+
+{% block head %}{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-lg-12">
+            <h3>客户购房意愿查询</h3>
+            <hr/>
+            <div class="table-scrollable">
+                <table id="table" class="table table-striped table-bordered table-advance table-hover">
+                    <thead>
+                    <tr>
+                        <th><span class="font-red">用户 ID</span></th>
+                        <th><span class="font-blue">社交质量评分</span></th>
+                        <th><span class="font-blue">购房需求评分</span></th>
+                        <th><span class="font-blue">购房能力评分</span></th>
+                        <th><span class="font-blue">楼盘吸引力评分</span></th>
+                        <th><span class="font-green">移动模式</span></th>
+                        <th><span class="font-green">消费偏好</span></th>
+                        <th><span class="font-red">购房意愿评分</span></th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                    <tr>
+                            <td>84146728</td>
+                            <td>37.26</td>
+                            <td>55.43</td>
+                            <td>77.21</td>
+                            <td>42.21</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货</td>
+                            <td><a class="label label-success">98.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>87774963</td>
+                            <td>24.26</td>
+                            <td>43.43</td>
+                            <td>34.21</td>
+                            <td>43.89</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货、败家</td>
+                            <td><a class="label label-success">88.12</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>31846313</td>
+                            <td>67.26</td>
+                            <td>23.43</td>
+                            <td>15.21</td>
+                            <td>34.46</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>败家、奢侈品</td>
+                            <td><a class="label label-warning">55.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>82342224</td>
+                            <td>37.12</td>
+                            <td>55.43</td>
+                            <td>77.33</td>
+                            <td>26.72</td>
+                            <td>本地、朝九晚五</td>
+                            <td>吃货、淘宝一族</td>
+                            <td><a class="label label-danger">27.25</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>38740234</td>
+                            <td>76.21</td>
+                            <td>55.44</td>
+                            <td>77.21</td>
+                            <td>28.99</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货</td>
+                            <td><a class="label label-warning">66.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                                                    <tr>
+                            <td>71592102</td>
+                            <td>37.26</td>
+                            <td>55.43</td>
+                            <td>77.21</td>
+                            <td>42.21</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货</td>
+                            <td><a class="label label-success">98.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>28539428</td>
+                            <td>24.26</td>
+                            <td>43.43</td>
+                            <td>34.21</td>
+                            <td>43.89</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货、败家</td>
+                            <td><a class="label label-success">88.12</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>20016784</td>
+                            <td>67.26</td>
+                            <td>23.43</td>
+                            <td>15.21</td>
+                            <td>34.46</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>败家、奢侈品</td>
+                            <td><a class="label label-warning">55.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>90892333</td>
+                            <td>37.12</td>
+                            <td>55.43</td>
+                            <td>77.33</td>
+                            <td>26.72</td>
+                            <td>本地、朝九晚五</td>
+                            <td>吃货、淘宝一族</td>
+                            <td><a class="label label-danger">27.25</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>69295959</td>
+                            <td>76.21</td>
+                            <td>55.44</td>
+                            <td>77.21</td>
+                            <td>28.99</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货</td>
+                            <td><a class="label label-warning">66.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                                                    <tr>
+                            <td>98884887</td>
+                            <td>37.26</td>
+                            <td>55.43</td>
+                            <td>77.21</td>
+                            <td>42.21</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货</td>
+                            <td><a class="label label-success">98.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>65796813</td>
+                            <td>24.26</td>
+                            <td>43.43</td>
+                            <td>34.21</td>
+                            <td>43.89</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货、败家</td>
+                            <td><a class="label label-success">88.12</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>46540527</td>
+                            <td>67.26</td>
+                            <td>23.43</td>
+                            <td>15.21</td>
+                            <td>34.46</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>败家、奢侈品</td>
+                            <td><a class="label label-warning">55.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>78074035</td>
+                            <td>37.12</td>
+                            <td>55.43</td>
+                            <td>77.33</td>
+                            <td>26.72</td>
+                            <td>本地、朝九晚五</td>
+                            <td>吃货、淘宝一族</td>
+                            <td><a class="label label-danger">27.25</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>26320190</td>
+                            <td>76.21</td>
+                            <td>55.44</td>
+                            <td>77.21</td>
+                            <td>28.99</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货</td>
+                            <td><a class="label label-warning">66.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                                                    <tr>
+                            <td>14369812</td>
+                            <td>37.26</td>
+                            <td>55.43</td>
+                            <td>77.21</td>
+                            <td>42.21</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货</td>
+                            <td><a class="label label-success">98.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>26622314</td>
+                            <td>24.26</td>
+                            <td>43.43</td>
+                            <td>34.21</td>
+                            <td>43.89</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货、败家</td>
+                            <td><a class="label label-success">88.12</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>50113830</td>
+                            <td>67.26</td>
+                            <td>23.43</td>
+                            <td>15.21</td>
+                            <td>34.46</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>败家、奢侈品</td>
+                            <td><a class="label label-warning">55.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>89282836</td>
+                            <td>37.12</td>
+                            <td>55.43</td>
+                            <td>77.33</td>
+                            <td>26.72</td>
+                            <td>本地、朝九晚五</td>
+                            <td>吃货、淘宝一族</td>
+                            <td><a class="label label-danger">27.25</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>65423278</td>
+                            <td>76.21</td>
+                            <td>55.44</td>
+                            <td>77.21</td>
+                            <td>28.99</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货</td>
+                            <td><a class="label label-warning">66.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                                                    <tr>
+                            <td>17075195</td>
+                            <td>37.26</td>
+                            <td>55.43</td>
+                            <td>77.21</td>
+                            <td>42.21</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货</td>
+                            <td><a class="label label-success">98.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>72602844</td>
+                            <td>24.26</td>
+                            <td>43.43</td>
+                            <td>34.21</td>
+                            <td>43.89</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货、败家</td>
+                            <td><a class="label label-success">88.12</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>71210327</td>
+                            <td>67.26</td>
+                            <td>23.43</td>
+                            <td>15.21</td>
+                            <td>34.46</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>败家、奢侈品</td>
+                            <td><a class="label label-warning">55.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>13644714</td>
+                            <td>37.12</td>
+                            <td>55.43</td>
+                            <td>77.33</td>
+                            <td>26.72</td>
+                            <td>本地、朝九晚五</td>
+                            <td>吃货、淘宝一族</td>
+                            <td><a class="label label-danger">27.25</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>48836669</td>
+                            <td>76.21</td>
+                            <td>55.44</td>
+                            <td>77.21</td>
+                            <td>28.99</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货</td>
+                            <td><a class="label label-warning">66.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                                                    <tr>
+                            <td>97728576</td>
+                            <td>37.26</td>
+                            <td>55.43</td>
+                            <td>77.21</td>
+                            <td>42.21</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货</td>
+                            <td><a class="label label-success">98.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>70540161</td>
+                            <td>24.26</td>
+                            <td>43.43</td>
+                            <td>34.21</td>
+                            <td>43.89</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货、败家</td>
+                            <td><a class="label label-success">88.12</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>58721618</td>
+                            <td>67.26</td>
+                            <td>23.43</td>
+                            <td>15.21</td>
+                            <td>34.46</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>败家、奢侈品</td>
+                            <td><a class="label label-warning">55.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>17844238</td>
+                            <td>37.12</td>
+                            <td>55.43</td>
+                            <td>77.33</td>
+                            <td>26.72</td>
+                            <td>本地、朝九晚五</td>
+                            <td>吃货、淘宝一族</td>
+                            <td><a class="label label-danger">27.25</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>32678527</td>
+                            <td>76.21</td>
+                            <td>55.44</td>
+                            <td>77.21</td>
+                            <td>28.99</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货</td>
+                            <td><a class="label label-warning">66.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                                                    <tr>
+                            <td>50709838</td>
+                            <td>37.26</td>
+                            <td>55.43</td>
+                            <td>77.21</td>
+                            <td>42.21</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货</td>
+                            <td><a class="label label-success">98.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>85341491</td>
+                            <td>24.26</td>
+                            <td>43.43</td>
+                            <td>34.21</td>
+                            <td>43.89</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货、败家</td>
+                            <td><a class="label label-success">88.12</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>45035400</td>
+                            <td>67.26</td>
+                            <td>23.43</td>
+                            <td>15.21</td>
+                            <td>34.46</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>败家、奢侈品</td>
+                            <td><a class="label label-warning">55.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>99640197</td>
+                            <td>37.12</td>
+                            <td>55.43</td>
+                            <td>77.33</td>
+                            <td>26.72</td>
+                            <td>本地、朝九晚五</td>
+                            <td>吃货、淘宝一族</td>
+                            <td><a class="label label-danger">27.25</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>20156860</td>
+                            <td>76.21</td>
+                            <td>55.44</td>
+                            <td>77.21</td>
+                            <td>28.99</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货</td>
+                            <td><a class="label label-warning">66.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                                                    <tr>
+                            <td>23191833</td>
+                            <td>37.26</td>
+                            <td>55.43</td>
+                            <td>77.21</td>
+                            <td>42.21</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货</td>
+                            <td><a class="label label-success">98.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>26347656</td>
+                            <td>24.26</td>
+                            <td>43.43</td>
+                            <td>34.21</td>
+                            <td>43.89</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货、败家</td>
+                            <td><a class="label label-success">88.12</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>25801086</td>
+                            <td>67.26</td>
+                            <td>23.43</td>
+                            <td>15.21</td>
+                            <td>34.46</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>败家、奢侈品</td>
+                            <td><a class="label label-warning">55.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>32318725</td>
+                            <td>37.12</td>
+                            <td>55.43</td>
+                            <td>77.33</td>
+                            <td>26.72</td>
+                            <td>本地、朝九晚五</td>
+                            <td>吃货、淘宝一族</td>
+                            <td><a class="label label-danger">27.25</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>26960144</td>
+                            <td>76.21</td>
+                            <td>55.44</td>
+                            <td>77.21</td>
+                            <td>28.99</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货</td>
+                            <td><a class="label label-warning">66.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                                                    <tr>
+                            <td>82718505</td>
+                            <td>37.26</td>
+                            <td>55.43</td>
+                            <td>77.21</td>
+                            <td>42.21</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货</td>
+                            <td><a class="label label-success">98.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>33348693</td>
+                            <td>24.26</td>
+                            <td>43.43</td>
+                            <td>34.21</td>
+                            <td>43.89</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货、败家</td>
+                            <td><a class="label label-success">88.12</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>95632934</td>
+                            <td>67.26</td>
+                            <td>23.43</td>
+                            <td>15.21</td>
+                            <td>34.46</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>败家、奢侈品</td>
+                            <td><a class="label label-warning">55.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>26333923</td>
+                            <td>37.12</td>
+                            <td>55.43</td>
+                            <td>77.33</td>
+                            <td>26.72</td>
+                            <td>本地、朝九晚五</td>
+                            <td>吃货、淘宝一族</td>
+                            <td><a class="label label-danger">27.25</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                        <tr>
+                            <td>20085449</td>
+                            <td>76.21</td>
+                            <td>55.44</td>
+                            <td>77.21</td>
+                            <td>28.99</td>
+                            <td>商旅、朝九晚五</td>
+                            <td>吃货</td>
+                            <td><a class="label label-warning">66.75</a></td>
+                            <td><a class="label label-default" data-toggle="modal" data-target="#detail">查看详情</a></td>
+                        </tr>
+                                                </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="modal fade" id="detail" tabindex="-1" role="dialog" aria-labelledby="detail" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">客户详情</h4>
+        </div>
+        <div class="modal-body">
+            <h4 class="bg-green" style="padding:5px;">社交质量评分</h4>
+
+            <div style="margin-top:3px;">
+                <div class="font-green" style="width:109px;display:inline-block;">通讯录广度：</div>
+                <div class="progress" style="width:455px;display:inline-block;margin-bottom:0;height:18px;vertical-align:top;">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+                </div>
+            </div>
+            <div style="margin-top:3px;">
+                <div class="font-green" style="width:109px;display:inline-block;">通讯录质量：</div>
+                <div class="progress" style="width:455px;display:inline-block;margin-bottom:0;height:18px;vertical-align:top;">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                </div>
+            </div>
+            <div style="margin-top:3px;">
+                <div class="font-green" style="width:109px;display:inline-block;">社交应用情况：</div>
+                <div class="progress" style="width:455px;display:inline-block;margin-bottom:0;height:18px;vertical-align:top;">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 21%"></div>
+                </div>
+            </div>
+            <h4 class="bg-blue" style="padding:5px;">购房需求评分</h4>
+
+            <div style="margin-top:3px;">
+                <div class="font-blue" style="width:109px;display:inline-block;">个人肖像评分：</div>
+                <div class="progress" style="width:455px;display:inline-block;margin-bottom:0;height:18px;vertical-align:top;">
+                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+                </div>
+            </div>
+            <div style="margin-top:3px;">
+                <div class="font-blue" style="width:109px;display:inline-block;">中介关联性：</div>
+                <div class="progress" style="width:455px;display:inline-block;margin-bottom:0;height:18px;vertical-align:top;">
+                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                </div>
+            </div>
+            <div style="margin-top:3px;">
+                <div class="font-blue" style="width:109px;display:inline-block;">购房信息搜索：</div>
+                <div class="progress" style="width:455px;display:inline-block;margin-bottom:0;height:18px;vertical-align:top;">
+                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 21%"></div>
+                </div>
+            </div>
+            <h4 class="bg-red" style="padding:5px;">购房能力评分</h4>
+
+            <div style="margin-top:3px;">
+                <div class="font-red" style="width:109px;display:inline-block;">电信服务消费：</div>
+                <div class="progress" style="width:455px;display:inline-block;margin-bottom:0;height:18px;vertical-align:top;">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+                </div>
+            </div>
+            <div style="margin-top:3px;">
+                <div class="font-red" style="width:109px;display:inline-block;">消费验证短信：</div>
+                <div class="progress" style="width:455px;display:inline-block;margin-bottom:0;height:18px;vertical-align:top;">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                </div>
+            </div>
+            <div style="margin-top:3px;">
+                <div class="font-red" style="width:109px;display:inline-block;">理财机构通讯：</div>
+                <div class="progress" style="width:455px;display:inline-block;margin-bottom:0;height:18px;vertical-align:top;">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 29%"></div>
+                </div>
+            </div>
+            <div style="margin-top:3px;">
+                <div class="font-red" style="width:109px;display:inline-block;">网站访问质量：</div>
+                <div class="progress" style="width:455px;display:inline-block;margin-bottom:0;height:18px;vertical-align:top;">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 41%"></div>
+                </div>
+            </div>
+            <div style="margin-top:3px;">
+                <div class="font-red" style="width:109px;display:inline-block;">经常出入场所：</div>
+                <div class="progress" style="width:455px;display:inline-block;margin-bottom:0;height:18px;vertical-align:top;">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 13%"></div>
+                </div>
+            </div>
+            <div style="margin-top:3px;">
+                <div class="font-red" style="width:109px;display:inline-block;">互动人群质量：</div>
+                <div class="progress" style="width:455px;display:inline-block;margin-bottom:0;height:18px;vertical-align:top;">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 9%"></div>
+                </div>
+            </div>
+            <div style="margin-top:3px;">
+                <div class="font-red" style="width:109px;display:inline-block;">消费应用情况：</div>
+                <div class="progress" style="width:455px;display:inline-block;margin-bottom:0;height:18px;vertical-align:top;">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 35%"></div>
+                </div>
+            </div>
+            <h4 class="bg-red" style="padding:5px;">楼盘吸引力评分</h4>
+
+            <div style="margin-top:3px;">
+                <div class="font-red" style="width:109px;display:inline-block;">工作地点交通：</div>
+                <div class="progress" style="width:455px;display:inline-block;margin-bottom:0;height:18px;vertical-align:top;">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                </div>
+            </div>
+            <div style="margin-top:3px;">
+                <div class="font-red" style="width:109px;display:inline-block;">出入场所交通：</div>
+                <div class="progress" style="width:455px;display:inline-block;margin-bottom:0;height:18px;vertical-align:top;">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 21%"></div>
+                </div>
+            </div>
+
+            <h4 class="bg-yellow" style="padding:5px;">用户标签</h4>
+
+            <div style="margin-top:3px;">
+                <div class="font-yellow" style="width:109px;display:inline-block;">移动模式：</div>
+                <a class="label label-warning">商旅</a>
+                <a class="label label-default">朝九晚五</a>
+                <a class="label label-warning">深夜加班</a>
+            </div>
+            <div style="margin-top:10px;">
+                <div class="font-yellow" style="width:109px;display:inline-block;">消费偏好：</div>
+                <a class="label label-warning">吃货</a>
+                <a class="label label-default">败家</a>
+                <a class="label label-warning">奢侈品</a>
+                <a class="label label-default">淘宝一族</a>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+{% load staticfiles %}
+<script src="{% static 'estate/js/jquery.dataTables.min.js' %}"></script>
+<script>
+    $(document).ready(function () {
+        var table = $("#table").DataTable({
+            "language": {
+                "sProcessing": "处理中...",
+                "sLengthMenu": "显示 _MENU_ 项结果",
+                "sZeroRecords": "没有匹配结果",
+                "sInfo": "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项",
+                "sInfoEmpty": "显示第 0 至 0 项结果，共 0 项",
+                "sInfoFiltered": "(由 _MAX_ 项结果过滤)",
+                "sInfoPostFix": "",
+                "sSearch": "搜索:",
+                "sUrl": "",
+                "sEmptyTable": "表中数据为空",
+                "sLoadingRecords": "载入中...",
+                "sInfoThousands": ",",
+                "oPaginate": {
+                    "sFirst": "首页",
+                    "sPrevious": "上页",
+                    "sNext": "下页",
+                    "sLast": "末页"
+                },
+                "oAria": {
+                    "sSortAscending": ": 以升序排列此列",
+                    "sSortDescending": ": 以降序排列此列"
+                }
+            },
+            "dom": "<'row' <'col-md-12'T>><'row'<'col-md-6 col-sm-12'l><'col-md-6 col-sm-12'f>r><'table-scrollable't><'row'<'col-md-5 col-sm-12'i><'col-md-7 col-sm-12'p>>", // horizobtal scrollable datatable
+            "tableTools": {
+                "sSwfPath": "assets/global/plugins/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf",
+                "aButtons": [{
+                    "sExtends": "pdf",
+                    "sButtonText": "PDF"
+                }, {
+                    "sExtends": "csv",
+                    "sButtonText": "CSV"
+                }, {
+                    "sExtends": "xls",
+                    "sButtonText": "Excel"
+                }]
+            }
+        });
+    });
+</script>
+{% endblock %}
